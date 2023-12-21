@@ -1,0 +1,30 @@
+**Training Dataset ('train'):**
+
+The training dataset, labeled as 'train,' is a set of records specifically curated for the purpose of training and fine-tuning the machine learning model. It serves as the foundation for the algorithm to learn patterns, relationships, and correlations between the input features and the target variable. The dataset consists of the following attributes:
+
+1. ⏱️ **'trip_duration':** Duration of the journey in seconds (Numeric).
+2. 🛣️ **'distance_traveled':** Distance covered during the taxi ride in kilometers (Numeric).
+3. 🧑‍🤝‍🧑 **'num_of_passengers':** Number of passengers in the taxi (Numeric).
+4. 💵 **'fare':** Base fare for the journey in INR (Numeric).
+5. 💲 **'tip':** Amount received by the driver as tips in INR (Numeric).
+6. 🎀 **'miscellaneous_fees':** Additional charges during the trip, such as tolls, convenience fees, GST, etc., in INR (Numeric).
+7. 💰 **'total_fare':** Grand total for the ride, the target variable for prediction, in INR (Numeric).
+8. ⚡ **'surge_applied':** Binary indicator representing whether surge pricing was applied or not (Yes/No).
+
+This dataset serves as the foundation for training the machine learning model, allowing it to understand the underlying patterns and relationships between the input features and the target variable. It contains labeled examples where the 'total_fare' is known, enabling the model to learn and generalize from this historical information.
+
+**Testing Dataset ('test'):**
+
+The testing dataset, labeled as 'test,' is a separate set of records designed for evaluating the trained machine learning model's predictive performance. It shares the same structure and attributes as the training dataset, excluding the 'total_fare' column. The absence of the 'total_fare' column is intentional, as the goal is to use the trained model to predict this target variable for the test set.
+
+The 'test' dataset includes the following attributes:
+
+1. ⏱️ **'trip_duration':** Duration of the journey in seconds (Numeric).
+2. 🛣️ **'distance_traveled':** Distance covered during the taxi ride in kilometers (Numeric).
+3. 🧑‍🤝‍🧑 **'num_of_passengers':** Number of passengers in the taxi (Numeric).
+4. 💵 **'fare':** Base fare for the journey in INR (Numeric).
+5. 💲 **'tip':** Amount received by the driver as tips in INR (Numeric).
+6. 🎀 **'miscellaneous_fees':** Additional charges during the trip, such as tolls, convenience fees, GST, etc., in INR (Numeric).
+7. ⚡ **'surge_applied':** Binary indicator representing whether surge pricing was applied or not (Yes/No).
+
+The 'test' dataset enables the assessment of the model's generalization capabilities on new, unseen data. By inputting this data into the trained model, predictions for the 'total_fare' variable can be generated and subsequently compared with the actual values (if available) for evaluating the model's accuracy and performance.
